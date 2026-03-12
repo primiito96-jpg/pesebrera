@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesebreras Trocha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Pesebreras Trocha">
+    </div>
+
+    <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#paseos">Paseos</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header id="inicio" class="hero">
+    <div class="overlay">
+       <h1 class="titulo-principal">
+    Descubre la belleza natural al lomo de un caballo.<br>Pesebreras Trocha
+</h1>
+
+        <p>Experimenta paisajes increíbles y momentos inolvidables</p>
+        <a href="#paseos" class="btn">Reservar ahora</a>
+    </div>
+</header>
+
+<!-- PASEOS DESTACADOS -->
+<section id="paseos" class="paseos">
+    <h2>Paseos Destacados</h2>
+
+    <div class="carousel">
+        <button class="prev">❮</button>
+
+        <div class="carousel-track">
+
+            <!-- CARD 1 -->
+            <div class="card">
+                <img src="imagenes/paseo1.jpeg" alt="Paseo 30 minutos">
+                <div class="card-content">
+                    <h3>Paseo 30 minutos</h3>
+                    <p>Ideal para principiantes y niños</p>
+                    <a
+                        href="https://wa.me/573127895202?text=Hola%20👋%0AQuiero%20reservar%20el%20*Paseo%2030%20minutos*%20🐎%0A📅%20Fecha:%0A⏰%20Hora:%0A👥%20Personas:"
+                        class="btn-reservar"
+                        target="_blank">
+                        Reservar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <img src="imagenes/paseo2.jpg" alt="Paseo 1 hora">
+                <div class="card-content">
+                    <h3>Paseo 1 Hora</h3>
+                    <p>Recorridos naturales con miradores</p>
+                    <a
+                        href="https://wa.me/573127895202?text=Hola%20👋%0AQuiero%20reservar%20el%20*Paseo%201%20Hora*%20🐎%0A📅%20Fecha:%0A⏰%20Hora:%0A👥%20Personas:"
+                        class="btn-reservar"
+                        target="_blank">
+                        Reservar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <img src="imagenes/paseo3.jpeg" alt="Cabalgata con comida">
+                <div class="card-content">
+                    <h3>Cabalgata + Comida</h3>
+                    <p>Sancocho o asado en kiosco con mirador</p>
+                    <a
+                        href="https://wa.me/573127895202?text=Hola%20👋%0AQuiero%20reservar%20la%20*Cabalgata%20+%20Comida*%20🐎🍲%0A📅%20Fecha:%0A⏰%20Hora:%0A👥%20Personas:"
+                        class="btn-reservar"
+                        target="_blank">
+                        Reservar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="next">❯</button>
+    </div>
+
+    <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<!-- ACERCA -->
+ 
+<section id="acerca" class="about">
+  
+  <div class="about-text">
+    <h2>Acerca de Pesebreras Trocha</h2>
+    <p>
+      Somos un emprendimiento dedicado al alquiler de caballos y la creación 
+      de experiencias únicas de cabalgata en entornos naturales.
+    </p>
+  </div>
+
+  <div class="about-img">
+    <img src="imagenes/carne.jpeg" alt="Caballos en pesebrera">
+  </div>
+
+</section>
+
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <h2>Contacto</h2>
+
+  <div class="contact-cards">
+
+    <div class="contact-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Ubicación</h3>
+      <p>Zona rural con mirador natural</p>
+    </div>
+
+    <a href="https://wa.me/573127895202?text=Hola%20quiero%20información%20sobre%20las%20cabalgatas"
+       target="_blank"
+       class="contact-card whatsapp-card">
+      <i class="fab fa-whatsapp"></i>
+      <h3>WhatsApp</h3>
+      <p>3127895202</p>
+    </a>
+
+    <div class="contact-card">
+      <i class="fas fa-clock"></i>
+      <h3>Horario</h3>
+      <p>Atención todos los días</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- MAPA -->
+<section class="mapa">
+    <h2>📍 Cómo llegar</h2>
+    <div class="mapa-contenedor">
+        <iframe
+            src="https://www.google.com/maps?q=Santagueda+Caldas&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Pesebreras Trocha - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
